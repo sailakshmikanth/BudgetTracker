@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    background-image: url('img.jpg'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .register-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 400px; /* Increased width */
+    position: relative;
+    top: -50px; /* Move the box upward */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* White text for contrast */
+  }
+  
+  input {
+    width: 100%;
+    padding: 16px; /* Increased padding for inputs */
+    margin: 12px 0;
+    border: 1px solid #9f7070; /* Darker border for input fields */
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff; /* White text for inputs */
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    height: 50px; /* Increased height for input fields */
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 14px 20px; /* Increased padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }

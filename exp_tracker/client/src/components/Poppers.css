@@ -1,0 +1,26 @@
+/* Poppers.css */
+.popper {
+    position: fixed;
+    bottom: 0; /* Start from the bottom of the viewport */
+    font-size: 24px; /* Size of the popper emoji */
+    animation: fly-up 2s forwards, fade-out 1s forwards;
+    opacity: 1;
+}
+
+@keyframes fly-up {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    100% {
+        transform: translateY(-200px); /* End position, moves up */
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        opacity: 0; /* Fade out */
+    }
+}

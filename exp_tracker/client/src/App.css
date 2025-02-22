@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --color-yellow:#f9c74f;
+  --color-purple:#9d4edd;
+}
+
+*>*{
+  font-family:'poppins',sans-serif;
+  margin:0;
+  padding:0;
+}
+
+.App {
+  text-align: center;
+  padding:4em 0;
+
+}
+
+.bg-yellow{
+  background-color:var(--color-yellow);
+}
+
+.bg-purple{
+  background-color:var(--color-purple);
+}
+
+.chart-title{
+  position:absolute;
+  left:0;
+  right:0;
+  top:40%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.btnupi{
+   
+  background-color: white;
+  text-align: center;
+  color: #007bff;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 1000px;
+  margin-right:100px;
+  }
+
+  :root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  body.dark-mode {
+    --background-color: #1e1e1e;
+    --text-color: #ffffff;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  .btnupi:hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+
+.form-input{
+  @apply mt-1 block w-full py-2 px-3 border-gray-200 bg-white rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm;
+}
+
+/* src/App.css */
+
+.navbar {
+  background-color: #1e3a8a; /* Darker shade for the navbar background */
+  padding: 1rem 2rem; /* Increased padding for more space */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar h1 {
+  font-size: 1.5rem; /* Slightly larger title */
+  font-weight: 600; /* Medium weight for title */
+  color: #f9fafb; /* Light color for contrast */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1.5rem; /* Increased spacing between items */
+}
+
+.navbar ul li {
+  cursor: pointer;
+  position: relative; /* For pseudo-elements */
+  color: #f9fafb; /* Light color for items */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar ul li:hover {
+  color: #fca5a1; /* Light coral color on hover */
+}
+
+.navbar ul li::after {
+  content: '';
+  display: block;
+  height: 2px; /* Underline thickness */
+  background: #fca5a1; /* Color for the underline */
+  transition: width 0.3s ease, opacity 0.3s ease;
+  width: 0; /* Start hidden */
+  opacity: 0; /* Start invisible */
+  position: absolute;
+  left: 50%;
+  bottom: -5px; /* Positioning below the text */
+  transform: translateX(-50%); /* Center it */
+}
+
+.navbar ul li:hover::after {
+  width: 100%; /* Full width on hover */
+  opacity: 1; /* Show the underline */
+}
+
+.bg-gray-900 { background-color: #1a202c; }
+.bg-gray-100 { background-color: #f7fafc; }
+.text-white { color: #ffffff; }
+.text-black { color: #000000; }
+
+.form-input {
+  background-color: #ffffff; /* Set background to white */
+  color: #000000; /* Set text color to black for contrast */
+  border: 1px solid #cccccc; /* Set border color */
+  padding: 10px; /* Add some padding */
+  border-radius: 4px; /* Add rounded corners */
+  width: 100%; /* Full width */
+}
+
+.form-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add shadow on focus */
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
